@@ -1,5 +1,5 @@
 # Rare Event Detection Using Ensemble Machine Learning on Large-Scale Public Data
-# Overview
+Overview
 
 Developed an end-to-end machine learning pipeline to detect rare signals within large, noisy, and highly imbalanced datasets using publicly available data from the Transiting Exoplanet Survey Satellite (TESS) mission via NASA.
 
