@@ -1,2 +1,6 @@
-# rare-event-ensemble-learning
-End-to-end ensemble ML pipeline for rare-event detection with feature engineering and threshold optimization on large public datasets.
+# Rare Event Detection Using Ensemble Machine Learning on Large-Scale Public Data
+# Overview
+
+Developed an end-to-end machine learning pipeline to detect rare signals within large, noisy, and highly imbalanced datasets using publicly available data from the Transiting Exoplanet Survey Satellite (TESS) mission via NASA.
+
+Although developed in an astrophysics context, this project addresses a core data science challenge common across finance, healthcare, cybersecurity, and risk modelling: accurately identifying rare but high-value events in complex data environments.
