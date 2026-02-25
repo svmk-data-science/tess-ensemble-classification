@@ -29,10 +29,16 @@ Pipeline includes:
 ## Models Evaluated
 
 The following classifiers were implemented and tuned:
-- Support Vector Classifier
-- Random Forest
+- Support Vector Classifier (SVC)
+- Random Forest (RF)
 - Gradient Boosting (LightGBM)
-- Multi-Layer Perceptron
+- Multi-Layer Perceptron (MLP)
 - Soft-Voting Ensemble (equal weighting)
 
 The Ensemble combines predicted probabilities from heterogeneous base learners to stabilise classification performance.
+
+## Evaluation Strategy
+
+Model performance was evaluated using:
+- Precision-Recall curves
+- Average Pe
