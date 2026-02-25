@@ -41,4 +41,10 @@ The Ensemble combines predicted probabilities from heterogeneous base learners t
 
 Model performance was evaluated using:
 - Precision-Recall curves
-- Average Pe
+- Average Precision (AP)
+- Evaluation Metrics e.g Confusion Matrices and ROC-AUC comparison
+
+The final soft-voting ensemble achieved the highest Average Precision (0.931) among the evaluated configurations, outperforming individual classifiers trained on both full and reduced feature sets.
+
+
+## Key
