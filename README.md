@@ -14,3 +14,25 @@ The TESS candidate catalogue contains large volumes of observational data used t
 The challenge is to develop a robust probabilistic classification framework capable of distinguishing confirmed planetary signals from non-planetary detections while maintaining reliable precision-recall trade-offs.
 
 This project evaluates multiple machine learning approaches and investigates whether a soft-voting ensemble can improve classification stability and predictive performance across heterogeneous model families.
+
+## Project Overview
+
+Pipeline includes:
+- Data preprocessing and cleaning
+- Feature engineering and transformation
+- Train/Test separation to prevent data leakage
+- Model comparison across multiple algorithm families
+- Precision-recall based evaluation
+- Soft-voting ensemble implementation
+- Threshold analysis and performance evaluation
+
+## Models Evaluated
+
+The following classifiers were implemented and tuned:
+- Support Vector Classifier
+- Random Forest
+- Gradient Boosting (LightGBM)
+- Multi-Layer Perceptron
+- Soft-Voting Ensemble (equal weighting)
+
+The Ensemble combines predicted probabilities from heterogeneous base learners to stabilise classification performance.
