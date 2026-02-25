@@ -41,11 +41,20 @@ The Ensemble combines predicted probabilities from heterogeneous base learners t
 
 Model performance was evaluated using a held-out test set that preserved the original class distribution to ensure unbias. Given the nature of the classification task, evaluation focused on Precision–Recall (PR) curves and Average Precision (AP) rather than accuracy, as PR analysis provides a more informative assessment under class imbalance.
 
-The final soft-voting ensemble achieved the highest Average Precision (0.931) among the evaluated configurations, outperforming individual classifiers trained on both full and reduced feature sets.
+In addition to Precision-Recall analysis, models were evaluated using:
+- Receiver Operating Characteristic (ROC) curves and ROC-AUC
+- Confusion matrices at selected operating thresholds
 
-## Key Technical Contributions
+ROC-AUC was uses to assess overall ranking performance across thresholds and to compare discriminative capacity independent of class-specific error costs.
 
-- Built a structured ML experimentation pipeline
+Confusion matrices were examined at representative probability thresholds to analyse the trade-off between false positives and false negatives, providing operational insight into screening performance under different decision criteria.
+
+While ROC-AUC offers a global view of separability, analysis of precision degradation at higher recall levels is more informative than true negative rates.
+
+## Key Results
+
+The final soft-voting ensemble achieved the highest Average Precision (0.931) among the evaluated configurations, outperforming individual classifiers, particularly LightGBM (AP=0.923) trained on both full and reduced feature sets.
+
 
 
 
