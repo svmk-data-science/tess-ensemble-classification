@@ -39,12 +39,14 @@ The Ensemble combines predicted probabilities from heterogeneous base learners t
 
 ## Evaluation Strategy
 
-Model performance was evaluated using:
-- Precision-Recall curves
-- Average Precision (AP)
-- Evaluation Metrics e.g Confusion Matrices and ROC-AUC comparison
+Model performance was evaluated using a held-out test set that preserved the original class distribution to ensure unbias. Given the nature of the classification task, evaluation focused on Precision–Recall (PR) curves and Average Precision (AP) rather than accuracy, as PR analysis provides a more informative assessment under class imbalance.
 
 The final soft-voting ensemble achieved the highest Average Precision (0.931) among the evaluated configurations, outperforming individual classifiers trained on both full and reduced feature sets.
+
+## Key Technical Contributions
+
+- Built a structured ML experimentation pipeline
+
 
 
 ## Key
