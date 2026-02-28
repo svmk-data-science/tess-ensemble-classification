@@ -51,6 +51,8 @@ Confusion matrices were examined at representative probability thresholds to ana
 
 While ROC-AUC offers a global view of separability, analysis of precision degradation at higher recall levels is more informative than true negative rates.
 
+Threshold selection was explored to balance recall sensitivity against precision stability depending on screening objectives.
+
 ## Key Results
 
 The final soft-voting ensemble achieved the highest Average Precision (0.931) among the evaluated configurations, outperforming individual classifiers, particularly LightGBM (AP=0.923) trained on both full and reduced feature sets.
