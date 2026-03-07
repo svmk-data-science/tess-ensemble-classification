@@ -41,6 +41,11 @@ The following classifiers were implemented and tuned:
 
 The Ensemble combines predicted probabilities from heterogeneous base learners to stabilise classification performance.
 
+## Model Interpretability
+To understand which features most strongly influenced classification decisions, SHAP (Shapely Additive Explanation) values were computed for the ensemble model.
+
+The analysis identifies the most influential features contributing to candidate classification, providing transparency to the ensemble's decision making process.
+
 ## Evaluation Strategy
 
 Model performance was evaluated using a held-out test set that preserved the original class distribution to ensure unbias. Given the nature of the classification task, evaluation focused on Precision–Recall (PR) curves and Average Precision (AP) rather than accuracy, as PR analysis provides a more informative assessment under class imbalance.
