@@ -26,7 +26,11 @@ Pipeline includes:
 - Soft-voting ensemble implementation
 - Threshold analysis and performance evaluation
 
-## Models Evaluated
+## Dataset
+
+## Methodology
+
+## Model Evaluation
 
 The following classifiers were implemented and tuned:
 - Support Vector Classifier (SVC)
@@ -53,10 +57,12 @@ While ROC-AUC offers a global view of separability, analysis of precision degrad
 
 Threshold selection was explored to balance recall sensitivity against precision stability depending on screening objectives.
 
-## Key Results
+## Key Findings/Results
 
 The final soft-voting ensemble achieved the highest Average Precision (0.931) among the evaluated configurations, outperforming individual classifiers, particularly LightGBM (AP=0.923) trained on both full and reduced feature sets.
 
+
+## Future Work
 
 
 
