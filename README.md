@@ -9,6 +9,8 @@ The objective was to evaluate and compare heterogeneous classification models an
 
 The ensemble achieved superior discrimination performance (Average Precision = 0.923), demonstrating strong operating stability at an optimised threshold of 0.46 which coincided with the ROC Youden-optimal point. At this threshold, the emsemble model attained an F1 score of 0.883 with high recall (0.917) for confirmed exoplanets while maintaining controlled false-positive rates.
 
+This work demonstrates how ensemble methods can provide a transparent, computationally accessible tool to support efficient allocation of follow-up observational resources in large-scale astronomical surveys.
+
 ## Problem Statement
 
 The TESS candidate catalogue contains large volumes of observational data used to identify potential exoplanets. Candidate classifications are derived from noisy photometric measurements and may include false positives due to astrophysical or instrumental effects.
