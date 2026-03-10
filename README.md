@@ -3,7 +3,7 @@
 
 A rigorous comparative study of probabilistic classification models and ensemble methods applied to large, noisy observational data.
 
-This project develops a reproducible end-to-end machine learning pipeline to classify exoplanet candidates using publicly available data from NASA's Transiting Exoplanet Survey Satellite (TESS) mission.
+This project develops a reproducible ansemble learning framework to improve automated screening of exoplanet candidates using photometric features derived from from Transiting Exoplanet Survey Satellite (TESS) observations available via NASA's Exoplanet Archive.
 
 The objective was to evaluate and compare heterogeneous classification models and assess whether a soft-voting ensemble model improves probabilistic discrimination performance in a large, noisy observational dataset.
 
