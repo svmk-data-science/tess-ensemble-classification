@@ -32,7 +32,7 @@ Pipeline includes:
 
 ## Dataset
 
-## Methodology
+## Methodology/ Feature Engineering
 
 ## Model Evaluation
 
