@@ -47,6 +47,12 @@ The following classifiers were implemented and tuned:
 
 The Ensemble combines predicted probabilities from heterogeneous base learners to stabilise classification performance.
 
+## Evaluation
+
+Models were evaluated using Precision–Recall curves, ROC-AUC, and confusion matrices.
+
+![Precision-Recall Curve](images/pr_curve.png)
+
 ## Threshold Optimisation
 
 ## Model Interpretability
