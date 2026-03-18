@@ -49,9 +49,7 @@ The Ensemble combines predicted probabilities from heterogeneous base learners t
 
 ## Evaluation
 
-Models were evaluated using Precision–Recall curves, ROC-AUC, and confusion matrices.
-
-![Precision-Recall Curve](images/pr_curve.png)
+![Precision-Recall Curve](images/pr_curve_model_comparison.png)
 
 ## Threshold Optimisation
 
