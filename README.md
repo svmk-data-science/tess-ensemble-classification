@@ -49,16 +49,19 @@ The Ensemble combines predicted probabilities from heterogeneous base learners t
 
 ## Evaluation
 
-### Precision–Recall Curve
-
-<img src="images/pr_curve_model_comparisons.png" width="600">
+### Precision-Recall Curve
 
 *Figure 1: Precision–Recall curve showing ensemble outperforming all base models (AP = 0.931).*
 
-3. ROC Curve
+### ROC Curve
 
-4. Confusion Matrix
+<img src="images/pr_curve_model_comparisons.png" width="600">
 
+*Figure 2: ROC curve comparison across models.*
+
+### Confusion Matrix
+
+*Figure 3: Confusion matrix for ensemble at optimal threshold.*
 
 ## Threshold Optimisation
 
