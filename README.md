@@ -51,13 +51,17 @@ The Ensemble combines predicted probabilities from heterogeneous base learners t
 
 ### Precision-Recall Curve
 
+![Alt text](images/pr_curve_model_comparison_mixed_features.png)
+
 <img src="images/pr_curve_model_comparison_mixed_features.png" width="600">
 
 *Figure 1: Precision–Recall curve showing ensemble outperforming all base models (AP = 0.931).*
 
 ### ROC Curve
 
-<img src="images/pr_curve_model_comparison_mixed_featus.png" width="600">
+![Alt text](images/ROC_curve_model_comparison.png)
+
+<img src="images/ROC_curve_model_comparison.png" width="600">
 
 *Figure 2: ROC curve comparison across models.*
 
