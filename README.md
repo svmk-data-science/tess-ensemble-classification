@@ -1,5 +1,5 @@
 # Exoplanet Candidate Classification Using Ensemble Machine Learning on Large-Scale Public Data
-## Overview
+## Executive Summary
 
 A rigorous comparative study of probabilistic classification models and ensemble methods applied to large, noisy observational data.
 
@@ -19,6 +19,8 @@ The challenge is to develop a robust probabilistic classification framework capa
 
 This project evaluates multiple machine learning approaches and investigates whether a soft-voting ensemble can improve classification stability and predictive performance across heterogeneous model families.
 
+## Dataset
+
 ## Project Overview
 
 Pipeline includes:
@@ -30,9 +32,9 @@ Pipeline includes:
 - Soft-voting ensemble implementation
 - Threshold analysis and performance evaluation
 
-## Dataset
 
-## Methodology/ Feature Engineering
+## Methodology
+ML pipeline + Feature Engineering
 
 ## Model Evaluation
 
@@ -45,10 +47,16 @@ The following classifiers were implemented and tuned:
 
 The Ensemble combines predicted probabilities from heterogeneous base learners to stabilise classification performance.
 
+## Threshold Optimisation
+
 ## Model Interpretability
 To understand which features most strongly influenced classification decisions, SHAP (Shapely Additive Explanation) values were computed for the ensemble model.
 
 The analysis identifies the most influential features contributing to candidate classification, providing transparency to the ensemble's decision making process.
+
+## Key Insights
+
+The final soft-voting ensemble achieved the highest Average Precision (0.931) among the evaluated configurations, outperforming individual classifiers, particularly LightGBM (AP=0.923) trained on both full and reduced feature sets.
 
 ## Evaluation Strategy
 
@@ -66,13 +74,5 @@ While ROC-AUC offers a global view of separability, analysis of precision degrad
 
 Threshold selection was explored to balance recall sensitivity against precision stability depending on screening objectives.
 
-## Key Findings/Results
-
-The final soft-voting ensemble achieved the highest Average Precision (0.931) among the evaluated configurations, outperforming individual classifiers, particularly LightGBM (AP=0.923) trained on both full and reduced feature sets.
-
-
 ## Future Work
 
-
-
-## Key
