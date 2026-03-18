@@ -52,7 +52,7 @@ The Ensemble combines predicted probabilities from heterogeneous base learners t
 ### Precision-Recall Curve
 
 <p align="center">
-  <img src="images/pr_curve_comparison_mixed_features.png" width="450" height="350">
+  <img src="images/pr_curve_model_comparison_mixed_features.png" width="450" height="350">
 </p>
 
 *Figure 1: Precision–Recall curve showing ensemble outperforming all base models (AP = 0.931).*
