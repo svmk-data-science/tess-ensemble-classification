@@ -79,7 +79,7 @@ To understand which features most strongly influenced classification decisions, 
 The analysis identifies the most influential features contributing to candidate classification, providing transparency to the ensemble's decision making process.
 
 <p align="center">
-  <img src="images/ensemble_SHAP_feature_importance.png" width="450" height="350">
+  <img src="images/ensemble_SHAP_feature_importance.png" width="45%">
   </p>
 
 *Figure 4: (Left) Feature importance ranked by mean absolute SHAP values, highlighting key astrophysical drivers of model predictions. (Right) Cumulative SHAP importance shows approximately 80% of predictive influence is captured by the top 12 features.*
