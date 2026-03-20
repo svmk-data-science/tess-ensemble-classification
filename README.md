@@ -82,7 +82,7 @@ The analysis identifies the most influential features contributing to candidate 
   <img src="images/ensemble_SHAP_feature_importance.png" width="120%">
   </p>
 
-*Figure 4: (Left) Feature importance ranked by mean absolute SHAP values, highlighting key astrophysical drivers of model predictions. (Right) Cumulative SHAP importance shows approximately 80% of predictive influence is captured by the top 12 features.*
+*Figure 4: (Left) Feature importance ranked by mean absolute SHAP values, highlighting the primary astrophysical drivers of model predictions. (Right) Cumulative SHAP importance indicates approximately 80% of the model's predictive influence is explained by the top 12 features.*
 
 
 
