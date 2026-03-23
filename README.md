@@ -74,7 +74,7 @@ The Ensemble combines predicted probabilities from heterogeneous base learners t
 ### Confusion Matrix
 
 <p align="center">
-  <img src="images/confusion_matrix_ensemble_publish.png" width="500">
+  <img src="images/confusion_matrix_ensemble_publish.png" width="80%">
 </p>
 
 
