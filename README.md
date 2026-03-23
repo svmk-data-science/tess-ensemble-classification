@@ -73,6 +73,11 @@ The Ensemble combines predicted probabilities from heterogeneous base learners t
 
 ### Confusion Matrix
 
+<p align="center">
+  <img src="images/confusion_matrix_ensemble_publish.png" width="500">
+</p>
+
+
 *Figure 3: Confusion matrix for ensemble at optimal threshold.*
 
 ## Threshold Optimisation
