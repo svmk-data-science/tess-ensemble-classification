@@ -11,7 +11,7 @@ Multiple models, which included Random Forest, Support Vector Machine, LightGBM 
 
 The ensemble model achieved strong results across key metrics with superior discrimination performance (Average Precision = 0.923), while maintaining controlled false-positive rates.
 
-Model interpretability was addressed using SHAP analysis, revealing a small subset of astrophysical features drives the majority of predictions.
+Model interpretability was addressed using SHAP analysis, revealing a small subset of astrophysical features driving the majority of predictions.
 
 This work demonstrates how ensemble methods can provide a transparent, computationally accessible approach to support efficient allocation of follow-up observational resources in large-scale astronomical surveys.
 
