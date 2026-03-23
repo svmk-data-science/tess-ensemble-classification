@@ -9,9 +9,11 @@ The objective was to evaluate and compare heterogeneous classification models an
 
 Multiple models, which included Random Forest, Support Vector Machine, LightGBM and Multi-Layer Perceptron, were combined into an ensemble model to enhance predictive performance and robustness.
 
-The ensemble model achieved superior discrimination performance (Average Precision = 0.923) across key metrics, demonstrating strong operating stability at an optimised threshold of 0.46 which coincided with the ROC Youden-optimal point. At this threshold, the emsemble model attained an F1 score of 0.883 with high recall (0.917) for confirmed exoplanets while maintaining controlled false-positive rates.
+The ensemble model achieved strong results across key metrics with superior discrimination performance (Average Precision = 0.923), while maintaining controlled false-positive rates.
 
-This work demonstrates how ensemble methods can provide a transparent, computationally accessible tool to support efficient allocation of follow-up observational resources in large-scale astronomical surveys.
+Model interpretability was addressed using SHAP analysis, revealing a small subset of astrophysical features drives the majority of predictions.
+
+This work demonstrates how ensemble methods can provide a transparent, computationally accessible approach to support efficient allocation of follow-up observational resources in large-scale astronomical surveys.
 
 ## Problem Statement
 
