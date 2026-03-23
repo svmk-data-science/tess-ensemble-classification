@@ -1,7 +1,7 @@
 # Exoplanet Candidate Classification Using Ensemble Machine Learning on Large-Scale Public Data
 ## Executive Summary
 
-A rigorous comparative study of probabilistic classification models and ensemble methods applied to large, noisy observational data.
+*A rigorous comparative study of probabilistic classification models and ensemble methods applied to large, noisy observational data.*
 
 This project develops a reproducible ansemble learning framework to improve the automated screening of exoplanet candidates using data derived from Transiting Exoplanet Survey Satellite (TESS) observations available via NASA's Exoplanet Archive.
 
