@@ -51,7 +51,7 @@ The following classifiers were implemented and tuned:
 
 The Ensemble combines predicted probabilities from heterogeneous base learners to stabilise classification performance.
 
-## Evaluation
+## Results/Evaluation
 
 ### Precision-Recall Curve
 
@@ -93,11 +93,19 @@ The analysis identifies the most influential features contributing to candidate 
 
 *Figure 4: (Left) Feature importance ranked by mean absolute SHAP values, highlighting the primary astrophysical drivers of model predictions. (Right) Cumulative SHAP importance indicates approximately 80% of the model's predictive influence is explained by the top 12 features.*
 
-
-
 ## Key Insights
-
 The final soft-voting ensemble achieved the highest Average Precision (0.931) among the evaluated configurations, outperforming individual classifiers, particularly LightGBM (AP=0.923) trained on both full and reduced feature sets.
+
+## Reproducibility
+This project was developed using Python and widely used machine learning libraries.
+
+Core dependencies are listed in "requirements.txt". To reproduce the environment:
+
+*```bash*
+*pip install -r requirements.txt*
+
+The analysis was conducted in Jupyter Notebook. All preprocessing, feature engineering, model training and evaluation steps are documented within the notebooks.
+
 
 ## Evaluation Strategy
 
@@ -114,6 +122,8 @@ Confusion matrices were examined at representative probability thresholds to ana
 While ROC-AUC offers a global view of separability, analysis of precision degradation at higher recall levels is more informative than true negative rates.
 
 Threshold selection was explored to balance recall sensitivity against precision stability depending on screening objectives.
+
+
 
 ## Future Work
 
