@@ -17,11 +17,11 @@ This work demonstrates how ensemble methods can provide a transparent, computati
 
 ## Problem Statement
 
-The TESS candidate catalogue contains large volumes of observational data used to identify potential exoplanets. Candidate classifications are derived from noisy photometric measurements and may include false positives due to astrophysical or instrumental effects.
+The TESS candidate catalogue contains large scale photometric data used to identify potential exoplanets, but candidate classifications are often uncertain due to noisy signals and false positives due to astrophysical and instrumental effects.
 
-The challenge is to develop a robust probabilistic classification framework capable of distinguishing confirmed planetary signals from non-planetary detections while maintaining reliable precision-recall trade-offs.
+This project addresses the challenge to develop a robust probabilistic classification framework to distinguish true planetary signals from non-planetary detections. A key objective is to achieve a strong balance between precision and recall ensuring that meaningful candidates are identified without introducing excessive false positives.
 
-This project evaluates multiple machine learning approaches and investigates whether a soft-voting ensemble can improve classification stability and predictive performance across heterogeneous model families.
+To tackle this, multiple machine learning models are evaluated and combined using a soft-voting ensemble approach to improve predictive performance, robustness and consistency across diverse model types. The solution is also designed to be computationally efficient and accessible, supporting use by researchers and citizen scientists with limited computing resources.
 
 ## Dataset
 
