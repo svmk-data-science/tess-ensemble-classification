@@ -15,7 +15,7 @@ The ensemble model achieved strong results across key metrics with superior disc
 
 Model interpretability was addressed using SHAP analysis, revealing a small subset of astrophysical features driving the majority of predictions.
 
-This work demonstrates how ensemble methods can provide a transparent, computationally accessible approach to support efficient allocation of follow-up observational resources in large-scale astronomical surveys.
+This work demonstrates how ensemble methods can improve the priortisation of exoplanet candidates, supporting more effective allocation of follow-up observational resources in large-scale astronomical surveys.
 
 ## Problem Statement
 
