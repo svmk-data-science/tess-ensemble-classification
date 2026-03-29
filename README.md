@@ -21,9 +21,11 @@ This work demonstrates how ensemble methods can improve the priortisation of exo
 
 The TESS candidate catalogue contains large scale photometric data used to identify potential exoplanets, but candidate classifications are often uncertain due to noisy signals and false positives due to astrophysical and instrumental effects.
 
-This project addresses the challenge to develop a robust probabilistic classification framework to distinguish true planetary signals from non-planetary detections. A key objective is to achieve a strong balance between precision and recall ensuring that meaningful candidates are identified without introducing excessive false positives.
+This project addresses the challenge of developing a robust probabilistic classification framework to distinguish true planetary signals from non-planetary detections. A key objective is to achieve an effective balance between precision and recall, ensuring that meaningful candidates are identified while minimising false positives.
 
-To tackle this, multiple machine learning models are evaluated and combined using a soft-voting ensemble approach to improve predictive performance, robustness and consistency across diverse model types. The solution is also designed to be computationally efficient and accessible, supporting use by researchers and citizen scientists with limited computational resources.
+To achieve this, multiple machine learning models are evaluated and combined using a soft-voting ensemble approach to improve predictive performance, robustness and consistency across diverse model types. The framework is also designed to be computationally efficient and accessible, enabling use by researchers and citizen scientists with limited computational resources.
+
+Although developed in the astrophysical context, the modelling and evaluation framework is transferable to other domains, including fraud detection, risk modelling, anomaly detection and medical diagnosis.
 
 ## Dataset
 
