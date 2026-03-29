@@ -23,7 +23,7 @@ The TESS candidate catalogue contains large scale photometric data used to ident
 
 This project addresses the challenge of developing a robust probabilistic classification framework to distinguish true planetary signals from non-planetary detections. A key objective is to achieve an effective balance between precision and recall, ensuring that meaningful candidates are identified while minimising false positives.
 
-To achieve this, multiple machine learning models are evaluated and combined using a soft-voting ensemble approach to improve predictive performance, robustness and consistency across diverse model types. The framework is also designed to be computationally efficient and accessible, enabling use by researchers and citizen scientists with limited computational resources.
+To achieve this, multiple machine learning models are evaluated and combined using a soft-voting ensemble approach to improve predictive performance, classification stability and precision-recall trade-offs compared to individual model types. The resulting framework is also designed to be computationally efficient and accessible, enabling use by researchers and citizen scientists with limited computational resources.
 
 Although developed in the astrophysical context, the modelling and evaluation framework is transferable to other domains, including fraud detection, risk modelling, anomaly detection and medical diagnosis.
 
