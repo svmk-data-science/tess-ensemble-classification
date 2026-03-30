@@ -29,6 +29,8 @@ Although developed in the astrophysical context, the modelling and evaluation fr
 
 ## Dataset
 
+The dataset was obtained from the TESS Project Candidates Catalogue via  NASA Archive (snapshot as at March 2025) and comprised photometric and derived features used to identified exoplanet candidates. A binary target
+
 ## Project Overview
 
 Pipeline includes:
