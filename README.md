@@ -39,7 +39,7 @@ Data pre-processing was conducted to ensure consistency and model readiness. Ins
 
 This project develops an end-to-end machine learning pipeline, which encompasses data pre-processing and cleaning, feature transformation and train-test separation and class balancing for robust model evaluation.
 
-Multiple machine learning models are compared using precision-recall metrics, followed by the implementation of a soft-voting ensemble to improve predictive stability and overall classification performance. Threshold analysis is futher applied to assess trade-offs in candidate selection and support effective priortisation.
+Multiple machine learning models are compared using precision-recall metrics, followed by the implementation of a soft-voting ensemble to improve predictive stability and overall classification performance. Threshold analysis is further applied to assess trade-offs in candidate selection and support effective priortisation.
 
 
 ## Methodology
