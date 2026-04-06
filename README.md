@@ -30,8 +30,7 @@ Although developed in the astrophysical context, the modelling and evaluation fr
 ## Dataset
 
 The dataset was obtained from the TESS Project Candidates Catalogue via  NASA Archive (snapshot as at March 2025) and comprised photometric and derived features used to identified exoplanet candidates. A binary target was constructed by encoding candidate disposition as '1' (confirmed) and '0' (false positive) forming the basis for supervised classification.
-
-Data pre-processing was conducted to ensure consistency and model readiness. Instances with ambiguous or non-confirmed dispositions (e.g 'FA'.'APC', 'PC' and missing labels) were removed, in addition to features that were missing value or those unsuitable for median imputation. Auxillary limit features did not provide meaningful predictive value and were excluded from the sample. The remaining numerical features were imputed using median values and transformed using logarithmic scaling to reduce skewness and stabilise variance. Data was then scaled using StandardScaler to ensure consistent feature magnitudes. The final dataset comprised 2054 instances and 22 features providing a clean and structured input for model development. The dataset was subsequently split into training and testing subsets for model development and evaluation. To address class imbalance, SMOTE (Synthetic Minority Oversampling Technique) applied to the training subset to prevent data leakage. 
+The initial dataset contained 7525 samples with 65 features prior to pre-processing. 
 
 
 
@@ -43,7 +42,19 @@ Multiple machine learning models are compared using precision-recall metrics, fo
 
 
 ## Methodology
-ML pipeline + Feature Engineering
+
+This project adopts a quantitiative framework guided by the Knowledge Discovery in Database (KDD) methodology, enabling systematic extraction of patterns from large real-world datasets.
+
+### Data Source
+
+The Transiting Exoplanet Survey Satellite (TESS) Project Candidate Catalogue consists of derived planetary and stellar parameters generated from light curve observations, where noise reduction and detrending have already been applied by the upstream pipeline.
+
+### Data Processing & Feature Engineering 
+
+Data pre-processing was conducted to ensure consistency and model readiness. Instances with ambiguous or non-confirmed dispositions (e.g 'FA'.'APC', 'PC' and missing labels) were removed, in addition to features that were missing value or those unsuitable for median imputation. Auxillary limit features did not provide meaningful predictive value and were excluded from the sample. The remaining numerical features were imputed using median values and transformed using logarithmic scaling to reduce skewness and stabilise variance. Data was then scaled using StandardScaler to ensure consistent feature magnitudes. The final dataset comprised 2054 instances and 22 features providing a clean and structured input for model development. The dataset was subsequently split into training and testing subsets for model development and evaluation. To address class imbalance, SMOTE (Synthetic Minority Oversampling Technique) applied to the training subset to prevent data leakage. 
+
+
+
 
 ## Model Evaluation
 
