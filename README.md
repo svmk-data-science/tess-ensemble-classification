@@ -74,6 +74,13 @@ The Ensemble model combines predicted probabilities from these base learners to 
 
 ## Results/Evaluation
 
+The performance of multiple classification and ensemble models was evaluated using both ROC-AUC and Precision-Recall (PR) AUC, with particular emphasis on precision-recall trade-offs due to class imbalance in exoplanet candidate detection.
+
+### Model Performance Comparison
+
+All models demonstrated strong discriminative performance, with consistently high scores across both ROC-AUC (Figure 1) and Precision-Recall AUC metrics (Figure 2). The ensemble model achieved the best overall performance, recording a ROC-AUC of 0.95 and PR-AUC of 0.931, indicating superior ability to distinguish between confirmed planets and false positives.
+
+
 ### Precision-Recall Curve
 
 <p align="center">
