@@ -78,7 +78,14 @@ The performance of multiple classification and ensemble models was evaluated usi
 
 ### Model Performance Comparison
 
-All models demonstrated strong discriminative performance, with consistently high scores across both ROC-AUC (Figure 1) and Precision-Recall AUC metrics (Figure 2). The ensemble model achieved the best overall performance, recording a ROC-AUC of 0.95 and PR-AUC of 0.931, indicating superior ability to distinguish between confirmed planets and false positives.
+All models exhibit strong discriminative performance, achieving high scores across both ROC-AUC (Figure 1) and Precision-Recall AUC metrics (Figure 2). The ensemble model provides the best overall performance, attaining a ROC-AUC of 0.95 and PR-AUC of 0.931, indicating superior ability to distinguish between confirmed planets and false positives as well as robustness across classification thresholds.
+
+Both the RF and LightGBM models demonstrate strong performance, reflecting the effectiveness of tree-based ensembles in modelling non-linear relationships within structured tabular data. The SVC model also performs competitively, maintaining stable class separation across thresholds. In contrast, the MLP model has lower overall performance and increased variability, particularly at low recall levels, suggesting sensitivity to class imbalance and reduced stability under the given feature representation.
+
+To support operational decision-making, an optimal classification threshold was determined using Youden's J Statistic (J = TPR - FPR). The analysis identified an optimal threshold of approximately 0.464, corresponding to the point on the ROC curve that maximises the trade-off between sensitivity (true positive rate) and specificity (true negative rate). This value offers a balanced operating point, improving detection performance while limiting false positives - an important consideration in exoplanet candidate screening where follow-up validation is resource-intensive.
+
+The ROC curves further confirm that all models significantly outperform the random baseline, with the ensemble model achieving a high true positive rate across most false positive rates. This behaviour indicates improved ranking calibration and reduced variance, reinforcing the advantage of ensemble learning in enhancing both predictive accuracy and robustness.
+
 
 
 ### Precision-Recall Curve
