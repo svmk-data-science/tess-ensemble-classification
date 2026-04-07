@@ -61,14 +61,16 @@ Principal Component Analysis (PCA) was applied to minimise redundacy and optimis
 
 ## Model Evaluation
 
-The following classifiers were implemented and tuned:
+The following classifiers were implemented as base learners and tuned:
 - Support Vector Classifier (SVC)
 - Random Forest (RF)
 - Gradient Boosting (LightGBM)
 - Multi-Layer Perceptron (MLP)
 - Soft-Voting Ensemble (equal weighting)
 
-The Ensemble combines predicted probabilities from heterogeneous base learners to stabilise classification performance.
+These models were selected for their ability to capture non-linear relationships, handle noisy data and perform effectively on structured datasets.
+
+The Ensemble model combines predicted probabilities from these base learners to stabilise classification performance.
 
 ## Results/Evaluation
 
