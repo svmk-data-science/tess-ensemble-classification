@@ -29,9 +29,7 @@ Although developed in the astrophysical context, the modelling and evaluation fr
 
 ## Dataset
 
-The dataset was obtained from the TESS Project Candidates Catalogue via  NASA Archive (snapshot as at March 2025) and comprised photometric and derived features used to identified exoplanet candidates. A binary target was constructed by encoding candidate disposition as '1' (confirmed) and '0' (false positive) forming the basis for supervised classification.
-The initial dataset contained 7525 samples with 65 features prior to pre-processing. 
-
+The dataset was obtained from the TESS Project Candidates Catalogue via  NASA Archive (snapshot as at March 2025) and comprised photometric and derived features used to identified exoplanet candidates. A binary target was constructed by encoding candidate disposition as '1' (confirmed) and '0' (false positive) forming the basis for supervised classification. The initial dataset contained 7525 samples with 65 features prior to pre-processing. 
 
 
 ## Project Overview
@@ -54,6 +52,11 @@ The Transiting Exoplanet Survey Satellite (TESS) Project Candidate Catalogue con
 Data pre-processing was conducted to ensure consistency and model readiness. Instances with ambiguous or non-confirmed dispositions (e.g 'FA'.'APC', 'PC' and missing labels) were removed, in addition to features that were missing value or those unsuitable for median imputation. Auxillary limit features did not provide meaningful predictive value and were excluded from the sample. The remaining numerical features were imputed using median values and transformed using logarithmic scaling to reduce skewness and stabilise variance. Data was then scaled using StandardScaler to ensure consistent feature magnitudes. The final dataset comprised 2054 instances and 22 features providing a clean and structured input for model development. The dataset was subsequently split into training and testing subsets for model development and evaluation. To address class imbalance, SMOTE (Synthetic Minority Oversampling Technique) applied to the training subset to prevent data leakage. 
 
 
+### Feature Selection & Dimensionality Reduction
+
+Feature importance was assessed using SHAP (Shapley Additive Explanations) enabling transparent ranking of feature contributions. Features that account for 95% of cumulative importance were retained to reduce dimensionality without significant loss of information.
+
+Principal Component Analysis (PCA) was applied to minimise redundacy and optimise feature representation, improving computational efficiency and model performance.
 
 
 ## Model Evaluation
