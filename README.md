@@ -86,7 +86,11 @@ To support operational decision-making, an optimal classification threshold was 
 
 The ROC curves further confirm that all models significantly outperform the random baseline, with the ensemble model achieving a high true positive rate across most false positive rates. This behaviour indicates improved ranking calibration and reduced variance, reinforcing the advantage of ensemble learning in enhancing both predictive accuracy and robustness.
 
+The confusion matrix (Figure 3) indicates strong overall classification performance of the ensemble model at the optimal threshold (0.46). The model correctly identifies 177 confirmed exoplanets (true positives) and 186 non-confirmed cases (true negatives) with balanced predictive capability across both classes.
 
+Misclassification rates are relatively low with 16 false negatives (3.9%) and 32 false positives (7.8%). A larger number of false positives compared with false negatives suggests a slight bias towards identifying candidates as confirmed, which is acceptable in screening contexts where missing true positives is more costly than conducting additional follow-up on false alarms.
+
+The results reflect a well-balanced trade-off between sensitivity and specificity, consistent with the threshold derivef with Youden's J Statistic.
 
 ### Precision-Recall Curve
 
@@ -112,7 +116,7 @@ The ROC curves further confirm that all models significantly outperform the rand
 </p>
 
 
-*Figure 3: Confusion matrix for ensemble at optimal threshold.*
+*Figure 3: Confusion matrix for the ensemble model at the optimal threshold (≈ 0.46), derived from maximising Youden’s J statistic..*
 
 ## Threshold Optimisation
 
