@@ -49,7 +49,7 @@ The Transiting Exoplanet Survey Satellite (TESS) Project Candidate Catalogue con
 
 ### Data Processing & Feature Engineering 
 
-Data pre-processing was conducted to ensure consistency and model readiness. Instances with ambiguous or non-confirmed dispositions (e.g 'FA'.'APC', 'PC' and missing labels) were removed, in addition to features that were missing value or those unsuitable for median imputation. Auxillary limit features did not provide meaningful predictive value and were excluded from the sample. The remaining numerical features were imputed using median values and transformed using logarithmic scaling to reduce skewness and stabilise variance. Data was then scaled using StandardScaler to ensure consistent feature magnitudes. The final dataset comprised 2054 instances and 22 features providing a clean and structured input for model development. The dataset was subsequently split into training and testing subsets for model development and evaluation. To address class imbalance, SMOTE (Synthetic Minority Oversampling Technique) applied to the training subset to prevent data leakage. 
+Data pre-processing was conducted to ensure consistency and model readiness. Instances with ambiguous or non-confirmed dispositions (e.g 'FA'.'APC', 'PC' and missing labels) were removed, in addition to features that were missing value or those unsuitable for median imputation. Auxillary limit features did not provide meaningful predictive value and were excluded from the sample. The remaining numerical features were imputed using median values and transformed using logarithmic scaling to reduce skewness and stabilise variance. Data was then scaled using StandardScaler to ensure consistent feature magnitudes. The final dataset reduces to 2054 instances and 22 features, providing a clean and structured input for model development. The dataset was subsequently split into training and testing subsets for model development and evaluation. To address class imbalance, SMOTE (Synthetic Minority Oversampling Technique) applied to the training subset to prevent data leakage. 
 
 
 ### Feature Selection & Dimensionality Reduction
@@ -88,9 +88,9 @@ The ROC curves further confirm that all models significantly outperform the rand
 
 The confusion matrix (Figure 3) indicates strong overall classification performance of the ensemble model at the optimal threshold (0.46). The model correctly identifies 177 confirmed exoplanets (true positives) and 186 non-confirmed cases (true negatives) with balanced predictive capability across both classes.
 
-Misclassification rates are relatively low with 16 false negatives (3.9%) and 32 false positives (7.8%). A larger number of false positives compared with false negatives suggests a slight bias towards identifying candidates as confirmed, which is acceptable in screening contexts where missing true positives is more costly than conducting additional follow-up on false alarms.
+Misclassification rates are relatively low with 16 false negatives (3.9%) and 32 false positives (7.8%), the result corresponding to a precision of 0.85, recall of 0.92 and an F1-Score of 0.88. A larger number of false positives compared with false negatives suggests a modest bias towards identifying candidates as confirmed, which is often desirable in exoplanet screening as missing true positives may result in overlooked discoveries, whereas false positives can be filtered through subsequent validation process.
 
-The results reflect a well-balanced trade-off between sensitivity and specificity, consistent with the threshold derivef with Youden's J Statistic.
+Overall, the results reflect a well-calibrated trade-off between sensitivity and specificity, consistent with the threshold derived using Youden's J Statistic.
 
 ### Precision-Recall Curve
 
