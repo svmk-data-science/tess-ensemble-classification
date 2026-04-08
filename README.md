@@ -94,8 +94,7 @@ The ROC curves further confirm that all models significantly outperform the rand
   <img src="images/pr_curve_model_comparison_mixed_features.png" width="450" height="350">
 </p>
 
-*Figure 1: Precision–Recall curve showing ensemble outperforming all base models (AP = 0.931).*
-
+*Figure 1: Precision–Recall curve for all evaluated models. The ensemble model outperforms all other models by achieving the highest average precision (AP = 0.931) while maintaining superior precision across a broad range of recall levels.*
 
 ### ROC Curve
 
@@ -104,7 +103,7 @@ The ROC curves further confirm that all models significantly outperform the rand
 </p>
 
 
-*Figure 2: ROC curve comparison across models.*
+*Figure 2: ROC curve comparison across classification models. The optimal decision threshold (≈ 0.464), determined using Youden’s J statistic (J = TPR − FPR), is indicated, representing the point that maximises the trade-off between sensitivity and specificity.*
 
 ### Confusion Matrix
 
@@ -126,7 +125,7 @@ The analysis identifies the most influential features contributing to candidate 
   <img src="images/ensemble_SHAP_feature_importance.png" width="120%">
   </p>
 
-*Figure 4: (Left) Feature importance ranked by mean absolute SHAP values, highlighting the primary astrophysical drivers of model predictions. (Right) Cumulative SHAP importance indicates approximately 80% of the model's predictive influence is explained by the top 12 features.*
+*Figure 4: SHAP-based feature importance  (left) and cumulative importance (right) for the ensemble model. Features are ranked by mean absolute SHAP values, highlighting the most influential variables driving classification decisions. The cumulative curve shows that approximately 80% of the model's predictive influence is explained by the top 12 features.*
 
 ## Key Insights
 The final soft-voting ensemble achieved the highest Average Precision (0.931) among the evaluated configurations, outperforming individual classifiers, particularly LightGBM (AP=0.923) trained on both full and reduced feature sets.
