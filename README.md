@@ -59,7 +59,7 @@ Feature importance was assessed using SHAP (Shapley Additive Explanations) enabl
 Principal Component Analysis (PCA) was applied to minimise redundacy and optimise feature representation, improving computational efficiency and model performance.
 
 
-## Model Evaluation
+## Model Training and Evaluation
 
 The following classifiers were implemented as base learners and tuned:
 - Support Vector Classifier (SVC)
@@ -70,11 +70,16 @@ The following classifiers were implemented as base learners and tuned:
 
 These models were selected for their ability to capture non-linear relationships, handle noisy data and perform effectively on structured datasets.
 
-The Ensemble model combines predicted probabilities from these base learners to stabilise classification performance.
+Model Hyperparameters tuning was performed via Grid Search CV and Randomised Search CV (Pedregosa et al. 2011) with performance evaluated through five-fold cross-validation. 
+
+The ensemble framework adopted a soft voting strategy, aggregating the predicted class probabilities from each base learner, to allow more confident classifiers exert greater influence on the final prediction. 
+
+Model evaluation was based on accuracy, precision, F1-score and Receiver Operating Characteristic (ROC) curves, supported by confusion matrices to quantify trade-offs between sensitivity and specificity. 
+
 
 ## Results/Evaluation
 
-The performance of multiple classification and ensemble models was evaluated using both ROC-AUC and Precision-Recall (PR) AUC, with particular emphasis on precision-recall trade-offs due to class imbalance in exoplanet candidate detection.
+Model evaluation was carried out using multiple complementary metrics, including accuracy, precision, recall, and F1-score, alongside Receiver Operating Characteristic (ROC-AUC) curves and Precision–Recall (PR) curves. Confusion matrices were additionally used to provide a detailed breakdown of classification outcomes, enabling explicit assessment of trade-offs between sensitivity (true positive rate) and specificity (true negative rate).
 
 ### Model Performance Comparison
 
