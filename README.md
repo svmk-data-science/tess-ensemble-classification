@@ -1,6 +1,6 @@
 # Exoplanet Candidate Classification Using Ensemble Machine Learning on Large-Scale Public Data
 
-*A rigorous comparative study of probabilistic classification models and ensemble methods applied to large, noisy observational data.*
+*A high performance ensemble learning framework for exoplanet candidate detection, validated through rigorous comparison of probabilistic classification models on noisy observational data.*
 
 
 ## Executive Summary
