@@ -137,7 +137,7 @@ The analysis identifies the most influential features contributing to candidate 
 *Figure 4: SHAP-based feature importance  (left) and cumulative importance (right) for the ensemble model. Features are ranked by mean absolute SHAP values, highlighting the most influential variables driving classification decisions. The cumulative curve shows that approximately 80% of the model's predictive influence is explained by the top 12 features.*
 
 ## Key Insights
-The final soft-voting ensemble achieved the highest Average Precision (0.931) among the evaluated configurations, outperforming individual classifiers, particularly LightGBM (AP=0.923) trained on both full and reduced feature sets.
+The final soft-voting ensemble achieved the highest Average Precision (0.931) among the evaluated configurations, outperforming individual classifiers, particularly LightGBM (AP=0.923) trained on both full and reduced feature sets. This is further reflected in a strong ROC-AUC of 0.95 indicating robust class separation across decision thresholds. An optimal threshold starting point (~ 0.46) provided a balanced trade-off between sensitivity and specificity with the model achieving a precision of 0.85, recall of 0.92 and F1-score of 0.88. This resulted in a slight bias towards a higher recall, which is appropriate for minimising missed exoplanet candidates. Additionally, SHAP-based analysis reveals that model predictions are driven by a compact subset of features supporting both interpretability and efficient feature utilisation.
 
 ## Reproducibility
 This project was developed using Python and widely used machine learning libraries.
