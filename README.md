@@ -125,6 +125,12 @@ Overall, the results reflect a well-calibrated trade-off between sensitivity and
 
 ## Threshold Optimisation
 
+While the optimal threshold (~0.464) was identified using Youden's J Statistic, its practical impact is best understood through its effect on classification behaviour. At this operating point, the ensemble model achieves a strong balance between sensitvity and specificity as reflected in the confusion matrix and associated metrics.
+
+The selected threshold introduces a slight bias toward higher recall, enabling the model to priortise the detection of true exoplanet candidates while maintaining acceptable false positive rates. This trade-off is appropriate in scientific screening contexts, where the cost of missed detection outweighs the cost of additional follow-up analysis.
+
+Importantly, the threshold remains flexible depending on operational priorities, allowing the ensemble model to be adapted to different stages of the discovery pipeline. Lower thresholds may further increase sensitivity when maximising discoveries while higher thresholds may improve precision in resource-constrained validation settings.
+ 
 ## Model Interpretability
 To understand which features most strongly influenced classification decisions, SHAP (Shapely Additive Explanation) values were computed for the ensemble model.
 
