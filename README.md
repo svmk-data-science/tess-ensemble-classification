@@ -29,7 +29,7 @@ Although developed in the astrophysical context, the modelling and evaluation fr
 
 ## Dataset
 
-The dataset was obtained from the TESS Project Candidates Catalogue via  NASA Archive (snapshot as at March 2025; Table 1) and comprised photometric and derived features used to identified exoplanet candidates. A binary target was constructed by encoding candidate disposition as '1' (confirmed) and '0' (false positive) forming the basis for supervised classification. The initial dataset contained 7525 samples with 65 features prior to pre-processing. 
+The dataset was obtained from the TESS Project Candidates Catalogue via  NASA Archive (snapshot as at March 2025; Table 1) and comprised photometric and derived features used to identified exoplanet candidates. A binary target was constructed by encoding candidate disposition as '1' (confirmed or known) and '0' (false positive) forming the basis for supervised classification. The initial dataset contained 7525 samples with 65 features prior to pre-processing. 
 
 <p align="center">
   <img src="images/TOI_Project_Candidates_2.jpeg" width="550" height="450">
