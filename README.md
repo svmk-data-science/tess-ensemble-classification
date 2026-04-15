@@ -178,7 +178,15 @@ While ROC-AUC offers a global view of separability, analysis of precision degrad
 
 Threshold selection was explored to balance recall sensitivity against precision stability depending on screening objectives.
 
+## Conclusion
 
+This project evaluated whether ensemble learning can improve the reliability of exoplanet candidate classification by reducing false positives and enhancing detection performance. The results demonstrate that a heterogeneous soft-voting ensemble model, combining complimentary base learners, achieves robust and interpretable classification across full and reduced feature sets.
+
+Benchmarking against individual models showed that the ensemble model delivered superior or comparable performance in terms of average precision and ROC characteristics, while maintaining stability across varying data conditions. SHAP-based interpretability further strengthened the framework by identifying key features driving model decisions, ensuring transparency with predictive performance.
+
+Importantly, threshold optimisation enabled a balanced trade-off between sensitivity and specificity, providing practical value for follow-up observations where missed detections carry higher scientific cost than manageable false positives. While improvements in false-positive discrimination were incremental, the overall framework reveals strong generalisability, scalability and suitability for real-work deployment.
+
+Overall, this work highlights the effectiveness of combining ensemble learning with domain-informed feature engineering and interpretability techniques to deliver a streamlined, high performance approach to exoplanet candidate screening.
 
 ## Future Work
 
