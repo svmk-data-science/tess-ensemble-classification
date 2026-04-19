@@ -201,7 +201,7 @@ Refine classification thresholds to better balance sensitivity and false positiv
 Extend the framework to larger datasets (e.g., TESS) to improve generalisability and support broader exoplanet discovery.
 
 - **Extend project scope:**
-Extend the scope of the project to model directly from light curve features. Initial challenges in phase folding where noise and irregularities reduced signal clarity. Future work should explore more robust preprocessing techniques or alternate time-series representations.
+Extend the scope of the project to model directly from light curve features. Address challenges in phase folding where noise and irregularities reduced signal clarity. Future work should explore more robust preprocessing techniques or alternate time-series representations.
 
 - **Feature extraction:**
 Revisited automated feature extraction (e.g TSFRESH) using larger datasets where such methods are more effective and can produce meaningful, generalisable features.
