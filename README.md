@@ -212,3 +212,4 @@ Investigate weighted soft voting or other ensemble techniques to further enhance
 - **Low-compute, accessible screening tools:**
 Continue developing lightweight, interpretable models that can be used by researchers without access to high-performance computing resources.
 
+## References
