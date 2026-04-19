@@ -194,21 +194,21 @@ Overall, this work highlights the effectiveness of combining ensemble learning w
 
 Future work will focus on improving model combustness, scalability and reliability of transit signal interpretation. Key areas for development includes:
 
-**Threshold optimisation:**
+- **Threshold optimisation:**
 Refine classification thresholds to better balance sensitivity and false positive rates.
 
-**Scalability to larger datasets:**
+- **Scalability to larger datasets:**
 Extend the framework to larger datasets (e.g., TESS) to improve generalisability and support broader exoplanet discovery.
 
-**Extend project scope:**
+- **Extend project scope:**
 Extend the scope of the project to model directly from light curve features. Initial challenges in phase folding where noise and irregularities reduced signal clarity. Future work should explore more robust preprocessing techniques or alternate time-series representations.
 
-**Feature extraction:**
+- **Feature extraction:**
 Revisited automated feature extraction (e.g TSFRESH) using larger datasets where such methods are more effective and can produce meaningful, generalisable features.
 
-**Advanced ensemble strategies:**
+- **Advanced ensemble strategies:**
 Investigate weighted soft voting or other ensemble techniques to further enhance classification performance and interpretability.
 
-**Low-compute, accessible screening tools:**
+- **Low-compute, accessible screening tools:**
 Continue developing lightweight, interpretable models that can be used by researchers without access to high-performance computing resources.
 
