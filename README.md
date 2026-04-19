@@ -190,3 +190,15 @@ Overall, this work highlights the effectiveness of combining ensemble learning w
 
 ## Future Work
 
+*Future work focuses on improving data quality, scaling the framework to larger datasets, and enhancing model robustness through advanced preprocessing, feature extraction, and ensemble techniques.*
+
+Future work will focus on improving model combustness, scalability and reliability of transit signal interpretation. Key areas for development includes:
+
+- **Threshold optimisation**
+  Refine classification thresholds to better balance sensitivity and false positive rates.
+
+- **Scalability to larger datasets**
+  Extend the framework to larger datasets (e.g., TESS) to improve generalisability and support broader exoplanet discovery.
+
+- **Extend work scope**
+  Extend the scipe o
