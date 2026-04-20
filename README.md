@@ -19,7 +19,7 @@ This work demonstrates how ensemble methods can improve the priortisation of exo
 
 ## Problem Statement
 
-The TESS Project Candidates Catalogue [1] contains large scale photometric data used to identify potential exoplanets, but candidate classifications are often uncertain due to noisy signals and false positives due to astrophysical and instrumental effects.
+The Project Candidates Catalogue [1], which contains large scale photometric data from the Transiting Exoplanet Survey Satellite (TESS)[2], is used to identify potential exoplanets, but such candidate classifications are often uncertain due to noisy signals and false positives due to astrophysical and instrumental effects.
 
 This project addresses the challenge of developing a robust probabilistic classification framework to distinguish true planetary signals from non-planetary detections. A key objective is to achieve an effective balance between precision and recall, ensuring that meaningful candidates are identified while minimising false positives.
 
@@ -29,7 +29,7 @@ Although developed in the astrophysical context, the modelling and evaluation fr
 
 ## Dataset
 
-The dataset was obtained from the TESS Project Candidates Catalogue via  NASA Archive [2] (snapshot as at March 2025; Table 1) and comprised photometric and derived features used to identified exoplanet candidates. A binary target was constructed by encoding candidate disposition as '1' (confirmed or known) and '0' (false positive) forming the basis for supervised classification. The initial dataset contained 7525 samples with 65 features prior to pre-processing. 
+The dataset was obtained from the TESS Project Candidates Catalogue via NASA Exoplanet Archive [3] (snapshot as at March 2025; Table 1) and comprised photometric and derived features used to identified exoplanet candidates. A binary target was constructed by encoding candidate disposition as '1' (confirmed or known) and '0' (false positive) forming the basis for supervised classification. The initial dataset contained 7525 samples with 65 features prior to pre-processing. 
 
 <p align="center">
   <img src="images/TOI_Project_Candidates_2.jpeg" width="550" height="450">
@@ -47,11 +47,11 @@ Multiple machine learning models are compared using precision-recall metrics, fo
 
 ## Methodology
 
-This project adopts a quantitiative framework guided by the Knowledge Discovery in Database (KDD) methodology [3], enabling systematic extraction of patterns from large real-world datasets.
+This project adopts a quantitiative framework guided by the Knowledge Discovery in Database (KDD) methodology [4], enabling systematic extraction of patterns from large real-world datasets.
 
 ### Data Source
 
-The Transiting Exoplanet Survey Satellite (TESS) Project Candidate Catalogue consists of derived planetary and stellar parameters generated from light curve observations, where noise reduction and detrending have already been applied by the upstream pipeline.
+The Project Candidate Catalogue consists of derived planetary and stellar parameters generated from light curve observations, where noise reduction and detrending have already been applied by the upstream pipeline.
 
 ### Data Processing & Feature Engineering 
 
@@ -60,7 +60,7 @@ Data pre-processing was conducted to ensure consistency and model readiness. Ins
 
 ### Feature Selection & Dimensionality Reduction
 
-Feature importance was assessed using SHAP (Shapley Additive Explanations) enabling transparent ranking of feature contributions. Features that account for 95% of cumulative importance were retained to reduce dimensionality without significant loss of information.
+Feature importance was assessed using SHAP (Shapley Additive Explanations) [5] enabling transparent ranking of feature contributions. Features that account for 95% of cumulative importance were retained to reduce dimensionality without significant loss of information.
 
 Principal Component Analysis (PCA) was applied to minimise redundacy and optimise feature representation, improving computational efficiency and model performance.
 
@@ -216,11 +216,13 @@ Continue developing lightweight, interpretable models that can be used by resear
 
 [1] Stassun, K. G., Oelkers, R. J., Paegert, M., Torres, G., et al. (2019). *The TESS Input Catalog and Candidate Target List*. The Astronomical Journal, 158(4), 138. https://doi.org/10.3847/1538-3881/ab3467
 
-[2] Akeson, R. L., Chen, X., Ciardi, D., Crane, M., et al. (2013). *The NASA Exoplanet Archive: Data and Tools for Exoplanet Research*. arXiv preprint arXiv:1307.2944. Available at: https://arxiv.org/abs/1307.2944 (Accessed: 10 May 2025).
+[2] Ricker, G. R., Winn, J. N., Vanderspek, R., Latham, D. W., et al. (2014). ‘The Transiting Exoplanet Survey Satellite’. *Journal of Astronomical Telescopes, Instruments, and Systems*, 1(1), p. 014003. https://doi.org/10.1117/1.JATIS.1.1.014003 (Accessed: 3 May 2025).
 
-[3] Geeks for Geeks (2025). *KDD Process in Databases*. Available at: https://www.geeksforgeeks.org/dbms/kdd-process-in-data-mining/ (Accessed: 26 May 2025).
+[3] Akeson, R. L., Chen, X., Ciardi, D., Crane, M., et al. (2013). *The NASA Exoplanet Archive: Data and Tools for Exoplanet Research*. arXiv preprint arXiv:1307.2944. Available at: https://arxiv.org/abs/1307.2944 (Accessed: 10 May 2025).
 
-[4] RoX818 (2024). *Understanding XAI: SHAP, LIME, and Other Key Techniques*. AI Competence. Available at: https://aicompetence.org/understanding-xai-shap-lime-and-beyond/ (Accessed: 9 May 2025).
+[4] Geeks for Geeks (2025). *KDD Process in Databases*. Available at: https://www.geeksforgeeks.org/dbms/kdd-process-in-data-mining/ (Accessed: 26 May 2025).
+
+[5] RoX818 (2024). *Understanding XAI: SHAP, LIME, and Other Key Techniques*. AI Competence. Available at: https://aicompetence.org/understanding-xai-shap-lime-and-beyond/ (Accessed: 9 May 2025).
 
 [5] Pedregosa, F., Varoquaux, G., Gramfort, A., et al. (2011). *Scikit-learn: Machine Learning in Python*. Journal of Machine Learning Research, 12, pp. 2825–2830. Available at: https://jmlr.org/papers/v12/pedregosa11a.html (Accessed: 2 February 2025).
 
