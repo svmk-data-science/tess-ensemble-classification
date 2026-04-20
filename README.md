@@ -47,7 +47,7 @@ Multiple machine learning models are compared using precision-recall metrics, fo
 
 ## Methodology
 
-This project adopts a quantitiative framework guided by the Knowledge Discovery in Database (KDD) methodology, enabling systematic extraction of patterns from large real-world datasets.
+This project adopts a quantitiative framework guided by the Knowledge Discovery in Database (KDD) methodology [3], enabling systematic extraction of patterns from large real-world datasets.
 
 ### Data Source
 
@@ -218,10 +218,11 @@ Continue developing lightweight, interpretable models that can be used by resear
 
 [2] Akeson, R. L., Chen, X., Ciardi, D., Crane, M., et al. (2013). *The NASA Exoplanet Archive: Data and Tools for Exoplanet Research*. arXiv preprint arXiv:1307.2944. Available at: https://arxiv.org/abs/1307.2944 (Accessed: 10 May 2025).
 
-[3] RoX818 (2024). *Understanding XAI: SHAP, LIME, and Other Key Techniques*. AI Competence. Available at: https://aicompetence.org/understanding-xai-shap-lime-and-beyond/ (Accessed: 9 May 2025).
+[3] Geeks for Geeks (2025). *KDD Process in Databases*. Available at: https://www.geeksforgeeks.org/dbms/kdd-process-in-data-mining/ (Accessed: 26 May 2025).
 
-[4] Pedregosa, F., Varoquaux, G., Gramfort, A., et al. (2011). *Scikit-learn: Machine Learning in Python*. Journal of Machine Learning Research, 12, pp. 2825–2830. Available at: https://jmlr.org/papers/v12/pedregosa11a.html (Accessed: 2 February 2025).
+[4] RoX818 (2024). *Understanding XAI: SHAP, LIME, and Other Key Techniques*. AI Competence. Available at: https://aicompetence.org/understanding-xai-shap-lime-and-beyond/ (Accessed: 9 May 2025).
 
-[5] Youden, W. J. (1950). *Index for rating diagnostic tests*. Cancer, 3(1), pp. 32–35. https://doi.org/10.1002/1097-0142(1950)3:1<32::AID-CNCR2820030106>3.0.CO;2-3
+[5] Pedregosa, F., Varoquaux, G., Gramfort, A., et al. (2011). *Scikit-learn: Machine Learning in Python*. Journal of Machine Learning Research, 12, pp. 2825–2830. Available at: https://jmlr.org/papers/v12/pedregosa11a.html (Accessed: 2 February 2025).
 
-[6] Geeks for Geeks (2025). *KDD Process in Databases*. Available at: https://www.geeksforgeeks.org/dbms/kdd-process-in-data-mining/ (Accessed: 26 May 2025).
+[6] Youden, W. J. (1950). *Index for rating diagnostic tests*. Cancer, 3(1), pp. 32–35. https://doi.org/10.1002/1097-0142(1950)3:1<32::AID-CNCR2820030106>3.0.CO;2-3
+
