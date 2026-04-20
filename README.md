@@ -76,7 +76,7 @@ The following classifiers were implemented as base learners and tuned:
 
 These models were selected for their ability to capture non-linear relationships, handle noisy data and perform effectively on structured datasets.
 
-Model Hyperparameters tuning was performed via Grid Search CV and Randomised Search CV (Pedregosa et al. 2011) with performance evaluated through five-fold cross-validation. 
+Model Hyperparameters tuning was performed via Grid Search CV and Randomised Search CV [6] with performance evaluated through five-fold cross-validation. 
 
 The ensemble framework adopted a soft voting strategy, aggregating the predicted class probabilities from each base learner, to allow more confident classifiers exert greater influence on the final prediction. 
 
@@ -93,7 +93,7 @@ All models exhibit strong discriminative performance, achieving high scores acro
 
 Both the RF and LightGBM models demonstrate strong performance, reflecting the effectiveness of tree-based ensembles in modelling non-linear relationships within structured tabular data. The SVC model also performs competitively, maintaining stable class separation across thresholds. In contrast, the MLP model has lower overall performance and increased variability, particularly at low recall levels, suggesting sensitivity to class imbalance and reduced stability under the given feature representation.
 
-To support operational decision-making, an optimal classification threshold was determined using Youden's J Statistic (J = TPR - FPR). The analysis identified an optimal threshold of approximately 0.464, corresponding to the point on the ROC curve that maximises the trade-off between sensitivity (true positive rate) and specificity (true negative rate). This value offers a balanced operating point, improving detection performance while limiting false positives - an important consideration in exoplanet candidate screening where follow-up validation is resource-intensive.
+To support operational decision-making, an optimal classification threshold was determined using Youden's J Statistic (J = TPR - FPR) [7]. The analysis identified an optimal threshold of approximately 0.464, corresponding to the point on the ROC curve that maximises the trade-off between sensitivity (true positive rate) and specificity (true negative rate). This value offers a balanced operating point, improving detection performance while limiting false positives - an important consideration in exoplanet candidate screening where follow-up validation is resource-intensive.
 
 The ROC curves further confirm that all models significantly outperform the random baseline, with the ensemble model achieving a high true positive rate across most false positive rates. This behaviour indicates improved ranking calibration and reduced variance, reinforcing the advantage of ensemble learning in enhancing both predictive accuracy and robustness.
 
@@ -224,7 +224,7 @@ Continue developing lightweight, interpretable models that can be used by resear
 
 [5] RoX818 (2024). *Understanding XAI: SHAP, LIME, and Other Key Techniques*. AI Competence. Available at: https://aicompetence.org/understanding-xai-shap-lime-and-beyond/ (Accessed: 9 May 2025).
 
-[5] Pedregosa, F., Varoquaux, G., Gramfort, A., et al. (2011). *Scikit-learn: Machine Learning in Python*. Journal of Machine Learning Research, 12, pp. 2825–2830. Available at: https://jmlr.org/papers/v12/pedregosa11a.html (Accessed: 2 February 2025).
+[6] Pedregosa, F., Varoquaux, G., Gramfort, A., et al. (2011). *Scikit-learn: Machine Learning in Python*. Journal of Machine Learning Research, 12, pp. 2825–2830. Available at: https://jmlr.org/papers/v12/pedregosa11a.html (Accessed: 2 February 2025).
 
-[6] Youden, W. J. (1950). *Index for rating diagnostic tests*. Cancer, 3(1), pp. 32–35. https://doi.org/10.1002/1097-0142(1950)3:1<32::AID-CNCR2820030106>3.0.CO;2-3
+[7] Youden, W. J. (1950). *Index for rating diagnostic tests*. Cancer, 3(1), pp. 32–35. https://doi.org/10.1002/1097-0142(1950)3:1<32::AID-CNCR2820030106>3.0.CO;2-3
 
