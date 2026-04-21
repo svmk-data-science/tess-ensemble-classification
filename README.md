@@ -54,13 +54,15 @@ Multiple machine learning models are compared using precision-recall metrics, fo
 
 ## Tech Stack
 
-- Python
-- Scikit-learn
-- LightGBM
-- NumPy / Pandas
-- Matplotlib / Seaborn
-- SHAP (Model Explainability)
-- Jupyter Notebook
+| Category              | Tools Used                     |
+|----------------------|------------------------------|
+| Programming          | Python                       |
+| Machine Learning     | Scikit-learn, LightGBM       |
+| Data Processing      | Pandas, NumPy                |
+| Explainability       | SHAP                         |
+| Visualisation        | Matplotlib, Seaborn          |
+| Environment          | Jupyter Notebook             |
+
 
 ## Methodology
 
