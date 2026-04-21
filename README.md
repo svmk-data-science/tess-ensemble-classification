@@ -15,7 +15,7 @@ The ensemble model achieved strong results across key metrics with superior disc
 
 Model interpretability was addressed using SHAP analysis, revealing a small subset of astrophysical features driving the majority of predictions.
 
-This work demonstrates how ensemble methods can improve the priortisation of exoplanet candidates, supporting more effective allocation of follow-up observational resources in large-scale astronomical surveys.
+This work demonstrates how ensemble methods can improve the prioritisation of exoplanet candidates, supporting more effective allocation of follow-up observational resources in large-scale astronomical surveys.
 
 ## Problem Statement
 
@@ -47,7 +47,7 @@ Multiple machine learning models are compared using precision-recall metrics, fo
 
 ## Methodology
 
-This project adopts a quantitiative framework guided by the Knowledge Discovery in Database (KDD) methodology [4], enabling systematic extraction of patterns from large real-world datasets.
+This project adopts a quantitative framework guided by the Knowledge Discovery in Database (KDD) methodology [4], enabling systematic extraction of patterns from large real-world datasets.
 
 ### Data Source
 
@@ -55,14 +55,14 @@ The Project Candidate Catalogue consists of derived planetary and stellar parame
 
 ### Data Processing & Feature Engineering 
 
-Data pre-processing was conducted to ensure consistency and model readiness. Instances with ambiguous or non-confirmed dispositions (e.g 'FA'.'APC', 'PC' and missing labels) were removed, in addition to features that were missing value or those unsuitable for median imputation. Auxillary limit features did not provide meaningful predictive value and were excluded from the sample. The remaining numerical features were imputed us  ing median values and transformed using logarithmic scaling to reduce skewness and stabilise variance. Data was then scaled using StandardScaler to ensure consistent feature magnitudes. The final dataset reduces to 2054 instances and 22 features, providing a clean and structured input for model development. The dataset was subsequently split into training and testing subsets for model development and evaluation. To address class imbalance, SMOTE (Synthetic Minority Oversampling Technique) applied to the training subset to prevent data leakage. 
+Data pre-processing was conducted to ensure consistency and model readiness. Instances with ambiguous or non-confirmed dispositions (e.g 'FA'.'APC', 'PC' and missing labels) were removed, in addition to features that were missing value or those unsuitable for median imputation. Auxiliary limit features did not provide meaningful predictive value and were excluded from the sample. The remaining numerical features were imputed using median values and transformed using logarithmic scaling to reduce skewness and stabilise variance. Data was then scaled using StandardScaler to ensure consistent feature magnitudes. The final dataset reduces to 2054 instances and 22 features, providing a clean and structured input for model development. The dataset was subsequently split into training and testing subsets for model development and evaluation. To address class imbalance, SMOTE (Synthetic Minority Oversampling Technique) applied to the training subset to prevent data leakage. 
 
 
 ### Feature Selection & Dimensionality Reduction
 
 Feature importance was assessed using SHAP (Shapley Additive Explanations) [5] enabling transparent ranking of feature contributions. Features that account for 95% of cumulative importance were retained to reduce dimensionality without significant loss of information.
 
-Principal Component Analysis (PCA) was applied to minimise redundacy and optimise feature representation, improving computational efficiency and model performance.
+Principal Component Analysis (PCA) was applied to minimise redundancy and optimise feature representation, improving computational efficiency and model performance.
 
 
 ## Model Training and Evaluation
@@ -118,7 +118,7 @@ Overall, the results reflect a well-calibrated trade-off between sensitivity and
 </p>
 
 
-*Figure 2: ROC curve comparison across classification models. The optimal decision threshold (≈ 0.464), determined using Youden’s J statistic (J = TPR − FPR), is indicated, representing the point that maximises the trade-off between sensitivity and specificity.*
+*Figure 2: ROC curve comparison across classification models. The optimal decision threshold (≈ 0.464), determined using Youden’s J Statistic (J = TPR − FPR), is indicated, representing the point that maximises the trade-off between sensitivity and specificity.*
 
 ### Confusion Matrix
 
@@ -127,7 +127,7 @@ Overall, the results reflect a well-calibrated trade-off between sensitivity and
 </p>
 
 
-*Figure 3: Confusion matrix for the ensemble model at the optimal threshold (≈ 0.46), derived from maximising Youden’s J statistic..*
+*Figure 3: Confusion matrix for the ensemble model at the optimal threshold (≈ 0.46), derived from maximising Youden’s J statistic.*
 
 ## Threshold Optimisation
 
@@ -170,7 +170,7 @@ In addition to Precision-Recall analysis, models were evaluated using:
 - Receiver Operating Characteristic (ROC) curves and ROC-AUC
 - Confusion matrices at selected operating thresholds
 
-ROC-AUC was uses to assess overall ranking performance across thresholds and to compare discriminative capacity independent of class-specific error costs.
+ROC-AUC was used to assess overall ranking performance across thresholds and to compare discriminative capacity independent of class-specific error costs.
 
 Confusion matrices were examined at representative probability thresholds to analyse the trade-off between false positives and false negatives, providing operational insight into screening performance under different decision criteria.
 
@@ -192,7 +192,7 @@ Overall, this work highlights the effectiveness of combining ensemble learning w
 
 *Future work focuses on improving data quality, scaling the framework to larger datasets, and enhancing model robustness through advanced preprocessing, feature extraction, and ensemble techniques.*
 
-Future work will focus on improving model combustness, scalability and reliability of transit signal interpretation. Key areas for development includes:
+Future work will focus on improving model robustness, scalability and reliability of transit signal interpretation. Key areas for development includes:
 
 - **Threshold optimisation:**
 Refine classification thresholds to better balance sensitivity and false positive rates.
