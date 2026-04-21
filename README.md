@@ -17,6 +17,14 @@ Model interpretability was addressed using SHAP analysis, revealing a small subs
 
 This work demonstrates how ensemble methods can improve the prioritisation of exoplanet candidates, supporting more effective allocation of follow-up observational resources in large-scale astronomical surveys.
 
+## Key Results
+
+- Average Precision: **0.931**
+- ROC-AUC: **0.95**
+- Optimal Threshold: **~0.46**
+- Precision: **0.85**
+- Recall: **0.92**
+
 ## Problem Statement
 
 The Project Candidates Catalogue [1], which contains large scale photometric data from the Transiting Exoplanet Survey Satellite (TESS)[2], is used to identify potential exoplanets, but such candidate classifications are often uncertain due to noisy signals and false positives due to astrophysical and instrumental effects.
@@ -29,7 +37,7 @@ Although developed in the astrophysical context, the modelling and evaluation fr
 
 ## Dataset
 
-The dataset was obtained from the TESS Project Candidates Catalogue via NASA Exoplanet Archive [3] (snapshot as at March 2025; Table 1) and comprised photometric and derived features used to identified exoplanet candidates. A binary target was constructed by encoding candidate disposition as '1' (confirmed or known) and '0' (false positive) forming the basis for supervised classification. The initial dataset contained 7525 samples with 65 features prior to pre-processing. 
+The dataset was obtained from the TESS Project Candidates Catalogue via NASA Exoplanet Archive [3] (snapshot as at March 2025; Table 1) and comprised photometric and derived features used to identify exoplanet candidates. A binary target was constructed by encoding candidate disposition as '1' (confirmed or known) and '0' (false positive) forming the basis for supervised classification. The initial dataset contained 7525 samples with 65 features prior to pre-processing. 
 
 <p align="center">
   <img src="images/TOI_Project_Candidates_2.jpeg" width="550" height="450">
@@ -44,10 +52,19 @@ This project develops an end-to-end machine learning pipeline, which encompasses
 
 Multiple machine learning models are compared using precision-recall metrics, followed by the implementation of a soft-voting ensemble to improve predictive stability and overall classification performance. Threshold analysis is further applied to assess trade-offs in candidate selection and support effective priortisation.
 
+## Tech Stack
+
+- Python
+- Scikit-learn
+- LightGBM
+- NumPy / Pandas
+- Matplotlib / Seaborn
+- SHAP (Model Explainability)
+- Jupyter Notebook
 
 ## Methodology
 
-This project adopts a quantitative framework guided by the Knowledge Discovery in Database (KDD) methodology [4], enabling systematic extraction of patterns from large real-world datasets.
+This project adopts a quantitative framework guided by the Knowledge Discovery in Database (KDD) methodology [4], enabling systematic extraction of patterns from large real-world datasets. The workflow follows a structured pipeline consisting of data preprocessing, feature engineering, model training and evaluation.
 
 ### Data Source
 
@@ -76,7 +93,7 @@ The following classifiers were implemented as base learners and tuned:
 
 These models were selected for their ability to capture non-linear relationships, handle noisy data and perform effectively on structured datasets.
 
-Model Hyperparameters tuning was performed via Grid Search CV and Randomised Search CV [6] with performance evaluated through five-fold cross-validation. 
+Model Hyperparameter tuning was performed via Grid Search CV and Randomised Search CV [6] with performance evaluated through five-fold cross-validation. 
 
 The ensemble framework adopted a soft voting strategy, aggregating the predicted class probabilities from each base learner, to allow more confident classifiers exert greater influence on the final prediction. 
 
@@ -89,7 +106,7 @@ Model evaluation was carried out using multiple complementary metrics, including
 
 ### Model Performance Comparison
 
-All models exhibit strong discriminative performance, achieving high scores across both ROC-AUC (Figure 1) and Precision-Recall AUC metrics (Figure 2). The ensemble model provides the best overall performance, attaining a ROC-AUC of 0.95 and PR-AUC of 0.931, indicating superior ability to distinguish between confirmed planets and false positives as well as robustness across classification thresholds.
+All models exhibit strong discriminative performance, achieving high scores across both Precision-Recall (Figure 1) and ROC-AUC (Figure 2) metrics. The ensemble model provides the best overall performance, attaining a ROC-AUC of 0.95 and PR-AUC of 0.931, indicating superior ability to distinguish between confirmed planets and false positives as well as robustness across classification thresholds.
 
 Both the RF and LightGBM models demonstrate strong performance, reflecting the effectiveness of tree-based ensembles in modelling non-linear relationships within structured tabular data. The SVC model also performs competitively, maintaining stable class separation across thresholds. In contrast, the MLP model has lower overall performance and increased variability, particularly at low recall levels, suggesting sensitivity to class imbalance and reduced stability under the given feature representation.
 
@@ -138,7 +155,7 @@ The selected threshold introduces a slight bias toward higher recall, enabling t
 Importantly, the threshold remains flexible depending on operational priorities, allowing the ensemble model to be adapted to different stages of the discovery pipeline. Lower thresholds may further increase sensitivity when maximising discoveries while higher thresholds may improve precision in resource-constrained validation settings.
  
 ## Model Interpretability
-To understand which features most strongly influenced classification decisions, SHAP (Shapely Additive Explanation) values were computed for the ensemble model.
+To understand which features most strongly influenced classification decisions, SHAP (Shapely Additive Explanations) values were computed for the ensemble model.
 
 The analysis identifies the most influential features contributing to candidate classification, providing transparency to the ensemble's decision making process.
 
