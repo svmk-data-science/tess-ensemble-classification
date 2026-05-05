@@ -35,21 +35,20 @@ The goal is to improve prediction reliability and reduce false positives in thes
 **Example improvement:**
 - Data preprocessing, cleaning and feature engineering
 - Train/test split to prevent data leakage
-- Model benchmarking (
-- Precision–Recall optimisation proved more informative than ROC-based evaluation under class imbalance
-- SHAP analysis revealed that a small subset of astrophysical features dominates model decision-making
-- Model comparison (SVM, Random Forest, LightGBM, MLP)  
-- Soft-voting ensemble model  
-- Threshold optimisation (Youden’s J statistic)  
+- Model benchmarking (SVM, Random Forest, LightGBM, MLP)
+- Soft-voting ensemble model construction
+- Precision–Recall evaluation for imbalanced data
+- Threshold optimisation (Youden’s J statistic)
+
 
 ---
 
 ## 💡 Key Insights
-- Ensemble learning improves classification robustness and stability  
-- Strong performance on imbalanced datasets  
-- A small subset of features drives most predictions (via SHAP)  
-- Threshold tuning enables flexible decision-making for real-world screening  
-
+- Ensemble learning reduced variance and improved stability across candidate classification
+- Precision–Recall optimisation proved more informative than ROC-based evaluation under class imbalance
+- SHAP analysis revealed that a small subset of astrophysical features dominates model decision-making
+- Threshold tuning enables configurable trade-offs between false positives and missed detections  
+  
 ---
 
 ## 📄 Full Technical Report
@@ -65,6 +64,14 @@ For detailed methodology, evaluation, and discussion:
 - Designed for practical and accessible use  
 
 ---
+
+## 📁 Repository Structure
+├── data/                # (optional or omitted if not included)
+├── notebooks/           # exploratory analysis and modelling
+├── images/              # plots and visualisations
+├── README.md
+├── FULL_REPORT.md
+
 
 ## 🏁 Summary
 This project demonstrates how ensemble learning and explainable AI can be combined to deliver accurate, transparent, and practical solutions for exoplanet candidate classification.
