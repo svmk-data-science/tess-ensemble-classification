@@ -1,4 +1,5 @@
 # 🧠 Exoplanet Candidate Classification Using Ensemble Learning
+A high-performance ensemble model achieving PR-AUC of 0.93 for exoplanet candidate classification using interpretable machine learning.
 
 🔬 Machine Learning | 🌌 Astrophysics | 🤖 Ensemble Models | 📊 Explainable AI
 
@@ -59,9 +60,9 @@ For detailed methodology, evaluation, and discussion:
 ---
 
 ## 📌 Project Highlights
-- End-to-end machine learning pipeline  
+- End-to-end machine learning pipeline from preprocessing to evaluation  
 - Interpretable AI applied to scientific data  
-- Designed for practical and accessible use  
+- Designed with a focus on practical deployment and interpretability  
 
 ---
 
