@@ -5,9 +5,11 @@
 ---
 
 ## 🚀 Overview
+Exoplanet detection pipelines often produce high false-positive rates due to noisy and imbalanced observational data.
+
 This project develops an ensemble machine learning framework to classify exoplanet candidates using data from the NASA Exoplanet Archive.
 
-The goal is to improve prediction reliability and reduce false positives in noisy, imbalanced astronomical datasets.
+The goal is to improve prediction reliability and reduce false positives in these challenging conditions.
 
 ---
 
