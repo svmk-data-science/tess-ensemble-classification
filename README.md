@@ -14,7 +14,7 @@ The goal is to improve prediction reliability and reduce false positives in thes
 ---
 
 ## 📊 Key Results
-- **Average Precision:** 0.931  
+- **Average Precision (PR-AUC):** 0.931  
 - **ROC-AUC:** 0.95  
 - **Precision:** 0.85  
 - **Recall:** 0.92  
@@ -32,12 +32,15 @@ The goal is to improve prediction reliability and reduce false positives in thes
 ---
 
 ## ⚙️ Approach
-- Data preprocessing and feature engineering  
+**Example improvement:**
+- Data preprocessing, cleaning and feature engineering
+- Train/test split to prevent data leakage
+- Model benchmarking (
+- Precision–Recall optimisation proved more informative than ROC-based evaluation under class imbalance
+- SHAP analysis revealed that a small subset of astrophysical features dominates model decision-making
 - Model comparison (SVM, Random Forest, LightGBM, MLP)  
 - Soft-voting ensemble model  
-- Precision–Recall based evaluation  
 - Threshold optimisation (Youden’s J statistic)  
-- SHAP-based interpretability  
 
 ---
 
