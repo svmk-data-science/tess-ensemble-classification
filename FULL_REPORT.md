@@ -19,7 +19,7 @@ This work demonstrates how ensemble methods can improve the prioritisation of ex
 
 ## Key Results
 
-- Average Precision: **0.931**
+- Average Precision (PR-AUC): **0.931**
 - ROC-AUC: **0.95**
 - Optimal Threshold: **~0.46**
 - Precision: **0.85**
@@ -38,6 +38,9 @@ Although developed in the astrophysical context, the modelling and evaluation fr
 ## Dataset
 
 The dataset was obtained from the TESS Project Candidates Catalogue via NASA Exoplanet Archive [3] (snapshot as at March 2025; Table 1) and comprised photometric and derived features used to identify exoplanet candidates. A binary target was constructed by encoding candidate disposition as '1' (confirmed or known) and '0' (false positive) forming the basis for supervised classification. The initial dataset contained 7525 samples with 65 features prior to pre-processing. 
+
+A processed version of the dataset used in this project is available here:
+[Download dataset](data/TOI_2025.03.30.csv)
 
 <p align="center">
   <img src="images/TOI_Project_Candidates_2.jpeg" width="550" height="450">
