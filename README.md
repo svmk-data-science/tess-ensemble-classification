@@ -65,13 +65,6 @@ For detailed methodology, evaluation, and discussion:
 
 ---
 
-## 📁 Repository Structure
-├── data/                # (optional or omitted if not included)
-├── notebooks/           # exploratory analysis and modelling
-├── images/              # plots and visualisations
-├── README.md
-├── FULL_REPORT.md
-
 
 ## 🏁 Summary
 This project demonstrates how ensemble learning and explainable AI can be combined to deliver accurate, transparent, and practical solutions for exoplanet candidate classification.
