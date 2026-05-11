@@ -66,6 +66,17 @@ For detailed methodology, evaluation, and discussion:
 
 ---
 
+## 💻 Code Samples
+
+Notebooks have been streamlined to highlight key modelling components.
+Some preprocessing and engineering steps have been intentionally condensed or omitted for brevity.
+
+The full methodology and pipeline design are documented in FULL_REPORT.md.
+
+- ensemble_model_evaluation.ipynb  
+- shap_feature_analysis.ipynb  
+
+---
 
 ## 🏁 Summary
 This project demonstrates how ensemble learning and explainable AI can be combined to deliver accurate, transparent, and practical solutions for exoplanet candidate classification.
